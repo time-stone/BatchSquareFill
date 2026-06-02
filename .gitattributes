@@ -1,0 +1,23 @@
+# Default: treat text as text, but don't change endings unless specified
+*               text=auto
+
+# Always LF for Unix-y scripts
+*.sh            text eol=lf
+*.bash          text eol=lf
+*.command       text eol=lf
+*.html          text eol=lf
+*.ipynb         text eol=lf
+*.csv           text eol=lf
+*.json          text eol=lf
+*.yml           text eol=lf
+*.env           text eol=lf
+*.md            text eol=lf
+
+# Windows-native scripts keep CRLF
+*.bat           text eol=crlf
+*.cmd           text eol=crlf
+
+# PowerShell: choose what you need.
+# If these are run in classic Windows PowerShell 5.1, CRLF is safest.
+# If everyone uses PowerShell 7+ across platforms, LF also works.
+*.ps1           text eol=crlf

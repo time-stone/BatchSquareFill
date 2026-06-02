@@ -1,0 +1,9 @@
+
+out/*
+.venv/
+CLAUDE.md
+uv.lock
+.claude/
+.DS_Store
+__pycache__/
+*.pyc
